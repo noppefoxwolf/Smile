@@ -20,7 +20,7 @@ function download(url, callback) {
 }
 var categories = {};
 
-download('https://cdn.rawgit.com/github/gemoji/master/db/emoji.json', function(data) {
+download('https://cdn.jsdelivr.net/gh/github/gemoji@master/db/emoji.json', function(data) {
   parse(data);
   parse_categories();
 });
